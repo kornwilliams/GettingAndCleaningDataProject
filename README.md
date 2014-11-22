@@ -8,7 +8,7 @@ This is the repository for Course Project for Getting and Cleaning Data on Cours
 Functions in run_anlysis.R
 =============================
 
-This file contains 4 functions: readInActivityLabels, readInFeatureNames, readInData, extractData and analysis.
+The run_anlysis.R file contains 5 functions: readInActivityLabels, readInFeatureNames, readInData, extractData and analysis.
 
 analysis() is the main entrance for this project. 
 
