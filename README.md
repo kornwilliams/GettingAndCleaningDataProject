@@ -5,8 +5,7 @@ This is the repository for Course Project for Getting and Cleaning Data on Cours
 * run_analysis.R: the R script file containing functions that produce the required tidy data file
 * CodeBook.md: the code book describing the variables in the tidy dataset
 
-Functions in run_anlysis.R
-=============================
+##Functions in run_anlysis.R
 
 The run_anlysis.R file contains 5 functions: readInActivityLabels, readInFeatureNames, readInData, extractData and analysis.
 
