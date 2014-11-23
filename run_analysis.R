@@ -58,10 +58,10 @@ readInFeatureNames <- function(dirPath = "UCI HAR Dataset") {
     featureFilePath = paste(dirPath, "/features.txt", sep = "")
     
     # read in data using read.table
-    featureNames = readLines(featureFilePath)
+    featureNames = read.table(featureFilePath, colClasses = c("integer", "character"))
     
     # return result
-    featureNames
+    featureNames[ , 2]
 }
 
 # This function reads in data in test or train directory
@@ -78,7 +78,8 @@ readInData <- function(dirPath, setType, featureNames, activityLabels) {
     
     ## reading X_test.txt
     xFilePath = paste(dirPath,"/", setType, "/X_", setType, ".txt", sep = "")
-    x = read.table(file = xFilePath, col.names = featureNames)
+    x = read.table(file = xFilePath)
+    names(x) = featureNames
     
     ## combine the three parts of data together
     data = cbind(subject, y$Activity, x)
@@ -91,7 +92,7 @@ readInData <- function(dirPath, setType, featureNames, activityLabels) {
 # This function extracts "Subject", "Activity" and every mean and std column
 # from data table created by readInData()
 # using regex technique
-extractData <- function(rawData, patt = "mean|std|Activity|Subject") {
+extractData <- function(rawData, patt = "mean\\(\\)|std\\(\\)|Activity|Subject") {
     # get column names
     columnNames = names(rawData)
     

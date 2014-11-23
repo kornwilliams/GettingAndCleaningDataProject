@@ -73,7 +73,7 @@ This function extracts "Subject", "Activity" and every mean and std column from 
 
 input:
 data: data table created as result of readInData()
-patt: regex pattern string used to extract columns whose column names fit the regex pattern, default set to "mean|std|Activity|Subject"
+patt: regex pattern string used to extract columns whose column names fit the regex pattern, default set to "mean\\(\\)|std\\(\\)|Activity|Subject"
 
 output:
 newData: a data table only contains required columns 
