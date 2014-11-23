@@ -184,6 +184,7 @@ As required by the course project, the set of variables that were estimated from
 <tr><td>fBodyBodyGyroJerkMag-mean()</td><td>67</td><td>Average of the mean value of the magnitute of the frequency domain signal of the jerk body gyroscope</td></tr>
 <tr><td>fBodyBodyGyroJerkMag-std()</td><td>68</td><td>Average of the standard deviation of the magnitute of the frequency domain signal of the jerk body gyroscope</td></tr>
 
+
 </tbody>
 </tbody>
  
