@@ -81,7 +81,7 @@ As required by the course project, the set of variables that were estimated from
 </ol>
 
 <table>
-<caption align = "center" ><strong>Table.1 Variable Description</strong></caption>
+<caption align = "center"><strong>Table.1 Variable Description</strong></caption>
 <tbody>
 <tr><td><em> Variable Name </em></td><td><em> Position </em></td><td><em> Explatation </em></td></tr>
 <tr><td width = "20%">Subject</td><td width = "10%">1</td><td width = "70%">An id number identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.</td></tr>
